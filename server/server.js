@@ -27,7 +27,6 @@ getAudio = async (videoURL, res) => {
       res.json({ base64Data });
     });
   });
-  fs.unlinkSync(mp3FilePath);
 };
 
 app.post("/yt-video-to-audio", (req, res) => {
